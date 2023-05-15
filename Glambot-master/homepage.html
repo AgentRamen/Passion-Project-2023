@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>MediPal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+  <script src="https://unpkg.com/string-similarity/umd/string-similarity.min.js"></script>
+  <script defer src="/Glambot-master/javascript/typewriter.js"></script>
+
+</head>
+
+<!-- License -->
+<h5>MediPal © 2023</h5>
+
+<body>
+
+<div class="container">
+  <header>
+    <nav>
+      <a href="homepage.html"><h2 class="logo">MediPal</h2></a>
+      <ul>
+        <li class="OtherApps">Other Apps &#x27F6</li>
+        <li><a href="ToDo.html">Checklist</a></li>
+        <li><a href="Loading.html">Calculator</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="text-box">
+    <p>Hey! I'm</p>
+    <h1>MediPal</h1>
+    <h3>Worries, Treatment, or <span id="typewriter"></span><span id="cursor">|</span> <br> I've got you covered!</h3>
+  
+    <div class="row1">
+      <a href="">Learn More</a>
+    </div>
+    <div class="row2">
+      <a href="">Contact Us <span>&#x27F6</span></a>
+    </div>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://instagram.com"><img src="images/instagram.png" alt=""></a>
+    <a href="https://youtube.com"><img src="images/youtube.png" alt=""></a>
+    <a href="https://twitter.com"><img src="images/twitter.png" alt=""></a>
+  </div>
+</div>
+
+<div class="gif" id="chatbot-gif-container">
+  <img src="images/chatbot-gif.gif" alt="">
+</div>
+
+<!---------------CHATBOT HTML----------------->
+
+  <div class="icon-container" id="chat-icon">
+  <img src="images/ChatbotCornerPNG.png" style="width:60px;" alt="chat-icon"/>
+  </div>
+
+  <div class="chatbox-container" id="chatbox-container">
+    <!-- Chatbot Head-->
+    <div class="chat-head">
+      <div class="chat-head-left">
+        <img src="images/ChatbotCornerPNG.png" alt="chat-bot"/>
+        <span class="logged-in">●</span>
+
+        <h3>MediPal, M.D.</h3>
+      </div>
+      <div class="chat-head-right">
+        <img src="images/close.png" id="chat-close"style="width:20px;" alt="close" /> 
+      </div>
+    </div>
+
+    <!-- Chatbot Body-->
+    <div class="chat-body" id="chat-body"></div>
+
+
+    <!-- Chatbot Footer-->
+
+    <div class="chat-footer">
+      <div class="chat-footer-left">
+        <input type="text" placeholder="Send a message..." id="message" />
+      </div>
+      <div class="chat-footer-right">
+        <span id="send" class="btn"> <img src="images/send.png" style="width:25px;" alt="send-icon" />
+        </span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/Glambot-master/javascript/main.js"></script>
+</body>
+
+</html>
